@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>同步待办清单</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>待办清单</h1>
+    <p id="sync-status" class="status">同步中…</p>
+    <form id="todo-form" autocomplete="off">
+      <input id="todo-input" type="text" placeholder="要做点什么？" maxlength="200" required>
+      <button type="submit">添加</button>
+    </form>
+    <p id="empty-tip" class="empty">暂无待办，添加一条吧</p>
+    <ul id="todo-list"></ul>
+    <p class="hint">多开几个标签页试试：添加、勾选、删除会实时同步</p>
+  </main>
+  <script src="sync.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
