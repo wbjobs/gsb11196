@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>同步待办清单</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>待办清单</h1>
+    <p class="hint">多标签页实时同步（BroadcastChannel + IndexedDB）</p>
+    <div class="add-row">
+      <input id="new-todo" type="text" placeholder="要做点什么？" autocomplete="off" />
+      <button id="add-btn">添加</button>
+    </div>
+    <ul id="todo-list"></ul>
+    <p id="count" class="count"></p>
+  </main>
+  <script src="sync.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
